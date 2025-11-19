@@ -1,19 +1,22 @@
-import HeroSection from './components/home/HeroSection';
-import WhyChooseFegors from './components/home/WhyChooseFegors';
-import ServicesPreview from './components/home/ServicesPreview';
-import SustainabilityCallout from './components/home/SustainabilityCallout';
-import Testimonials from './components/home/Testimonials';
-import CTASection from './components/home/CTASection';
+// New Bold Storytelling Components
+import StoryHero from './components/home/StoryHero';
+import ProblemSolutionStory from './components/home/ProblemSolutionStory';
+import ImpactStats from './components/home/ImpactStats';
+import MagazineServices from './components/home/MagazineServices';
+import HowItWorks from './components/home/HowItWorks';
+import CustomerStories from './components/home/CustomerStories';
+import BoldCTA from './components/home/BoldCTA';
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <WhyChooseFegors />
-      <ServicesPreview />
-      <SustainabilityCallout />
-      <Testimonials />
-      <CTASection />
+      <StoryHero />
+      <ProblemSolutionStory />
+      <ImpactStats />
+      <MagazineServices />
+      <HowItWorks />
+      <CustomerStories />
+      <BoldCTA />
     </>
   );
 }
