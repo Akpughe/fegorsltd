@@ -23,21 +23,22 @@ export default function Testimonials() {
     return (
         <Section id="testimonials">
             <div className="text-center mb-12 animate-fade-in-up">
-                <h2 className="text-fegors-black mb-4">What Our Clients Say</h2>
+                <h2 className="text-brand-black mb-4">What Our Clients Say</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
                     Don&apos;t just take our word for it - hear from the clients who trust us with their spaces.
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in-up">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {testimonials.map((testimonial, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow duration-200"
+                        className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-200 hover:-translate-y-1 animate-scale-in"
+                        style={{ animationDelay: `${index * 100}ms` }}
                     >
                         <div className="mb-6">
                             <svg
-                                className="w-10 h-10 text-fegors-green/20"
+                                className="w-10 h-10 text-eco-green/20"
                                 fill="currentColor"
                                 viewBox="0 0 24 24"
                             >
@@ -49,8 +50,8 @@ export default function Testimonials() {
                             &quot;{testimonial.quote}&quot;
                         </p>
 
-                        <div className="border-t border-fegors-gray pt-4">
-                            <p className="font-semibold text-fegors-black">
+                        <div className="border-t border-soft-grey pt-4">
+                            <p className="font-semibold text-brand-black">
                                 {testimonial.author}
                             </p>
                             <p className="text-sm text-gray-600">

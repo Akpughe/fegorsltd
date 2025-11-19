@@ -3,7 +3,7 @@ import React from 'react';
 interface SectionProps {
     children: React.ReactNode;
     className?: string;
-    backgroundColor?: 'white' | 'mist' | 'seafoam';
+    backgroundColor?: 'white' | 'grey' | 'eco' | 'sky';
     id?: string;
 }
 
@@ -14,9 +14,10 @@ export default function Section({
     id
 }: SectionProps) {
     const bgClass =
-        backgroundColor === 'mist' ? 'bg-fegors-mist' :
-            backgroundColor === 'seafoam' ? 'bg-fegors-seafoam' :
-                'bg-white';
+        backgroundColor === 'grey' ? 'bg-soft-grey' :
+        backgroundColor === 'eco' ? 'bg-gradient-eco' :
+        backgroundColor === 'sky' ? 'bg-gradient-sky' :
+        'bg-white';
 
     return (
         <section

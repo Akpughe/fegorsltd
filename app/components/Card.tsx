@@ -1,7 +1,7 @@
 import React from 'react';
 
-interface CardProps {
-    children: React.ReactNode;
+export interface CardProps {
+    children?: React.ReactNode;
     icon?: React.ReactNode;
     title?: string;
     description?: string;
@@ -9,26 +9,26 @@ interface CardProps {
     hoverable?: boolean;
 }
 
-export default function Card({
+const Card: React.FC<CardProps> = ({
     children,
     icon,
     title,
     description,
     className = '',
     hoverable = true
-}: CardProps) {
+}) => {
     const hoverClass = hoverable ? 'hover-lift' : '';
 
     return (
         <div className={`card ${hoverClass} ${className}`}>
             {icon && (
-                <div className="mb-4 text-fegors-green">
+                <div className="mb-4 text-eco-green">
                     {icon}
                 </div>
             )}
 
             {title && (
-                <h3 className="text-xl font-semibold mb-3 text-fegors-black">
+                <h3 className="text-xl font-semibold mb-3 text-brand-black">
                     {title}
                 </h3>
             )}
@@ -42,4 +42,6 @@ export default function Card({
             {children}
         </div>
     );
-}
+};
+
+export default Card;
