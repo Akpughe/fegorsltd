@@ -36,22 +36,14 @@ export default function Header() {
             <nav className="container-custom mx-auto px-4 md:px-6 py-3 md:py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 md:gap-3 group">
+                    <Link href="/" className="flex items-center group">
                         <Image
-                            src="/fegors-logo.jpg"
+                            src="https://ik.imagekit.io/r9a7zbqsf/Fegors%20.JPG"
                             alt="FEGORS Ltd Logo"
-                            width={45}
+                            width={120}
                             height={45}
-                            className="rounded-lg transition-transform duration-200 group-hover:scale-105"
+                            className="transition-transform duration-200 group-hover:scale-105"
                         />
-                        <div className="flex flex-col">
-                            <span className="text-xl md:text-2xl font-heading font-black text-brand-black leading-none">
-                                FEGORS
-                            </span>
-                            <span className="text-[10px] md:text-xs text-eco-green font-semibold uppercase tracking-wide leading-none">
-                                Eco Cleaning
-                            </span>
-                        </div>
                     </Link>
 
                     {/* Desktop Navigation */}
