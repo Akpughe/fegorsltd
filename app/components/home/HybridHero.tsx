@@ -16,7 +16,18 @@ export default function HybridHero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen lg:h-screen flex items-center justify-center overflow-hidden bg-white pt-20 lg:pt-0">
+        <section className="relative min-h-screen lg:h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-soft-grey/30 to-white pt-20 lg:pt-0">
+            {/* Decorative Background Elements */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                {/* Floating Organic Shapes */}
+                <div className="absolute top-20 left-10 w-72 h-72 bg-eco-green/5 rounded-full blur-3xl animate-float"></div>
+                <div className="absolute bottom-20 right-10 w-96 h-96 bg-sky-blue/5 rounded-full blur-3xl animate-float-delayed"></div>
+                <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-eco-green-light/5 rounded-full blur-3xl animate-float-slow"></div>
+
+                {/* Subtle Grid Pattern */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgb(0_0_0_/_0.03)_1px,transparent_0)] bg-[size:40px_40px]"></div>
+            </div>
+
             {/* Split Layout - Premium Minimalist meets Storytelling */}
             <div className="container-custom mx-auto px-6 py-12 lg:py-0">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
