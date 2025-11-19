@@ -16,16 +16,20 @@ export default function HybridHero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen lg:h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-soft-grey/30 to-white pt-20 lg:pt-0">
+        <section className="relative min-h-screen lg:h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-soft-grey/60 to-eco-green/5 pt-20 lg:pt-0">
             {/* Decorative Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {/* Floating Organic Shapes */}
-                <div className="absolute top-20 left-10 w-72 h-72 bg-eco-green/5 rounded-full blur-3xl animate-float"></div>
-                <div className="absolute bottom-20 right-10 w-96 h-96 bg-sky-blue/5 rounded-full blur-3xl animate-float-delayed"></div>
-                <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-eco-green-light/5 rounded-full blur-3xl animate-float-slow"></div>
+                <div className="absolute top-20 left-10 w-96 h-96 bg-eco-green/20 rounded-full blur-3xl animate-float"></div>
+                <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-sky-blue/15 rounded-full blur-3xl animate-float-delayed"></div>
+                <div className="absolute top-1/2 left-1/4 w-80 h-80 bg-eco-green-light/20 rounded-full blur-3xl animate-float-slow"></div>
+
+                {/* Geometric Accents */}
+                <div className="absolute top-1/4 right-1/4 w-32 h-32 border-2 border-eco-green/10 rounded-2xl rotate-45"></div>
+                <div className="absolute bottom-1/3 left-1/3 w-24 h-24 border-2 border-sky-blue/10 rounded-full"></div>
 
                 {/* Subtle Grid Pattern */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgb(0_0_0_/_0.03)_1px,transparent_0)] bg-[size:40px_40px]"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgb(76_175_80_/_0.08)_1px,transparent_0)] bg-[size:40px_40px]"></div>
             </div>
 
             {/* Split Layout - Premium Minimalist meets Storytelling */}
