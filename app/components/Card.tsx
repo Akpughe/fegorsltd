@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface CardProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     icon?: React.ReactNode;
     title?: string;
     description?: string;
@@ -22,13 +22,13 @@ export default function Card({
     return (
         <div className={`card ${hoverClass} ${className}`}>
             {icon && (
-                <div className="mb-4 text-fegors-green">
+                <div className="mb-4 text-eco-green">
                     {icon}
                 </div>
             )}
 
             {title && (
-                <h3 className="text-xl font-semibold mb-3 text-fegors-black">
+                <h3 className="text-xl font-semibold mb-3 text-brand-black">
                     {title}
                 </h3>
             )}

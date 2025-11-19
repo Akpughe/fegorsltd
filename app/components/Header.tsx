@@ -28,20 +28,20 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
                 }`}
         >
             <nav className="container-custom mx-auto px-6 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-3">
+                <Link href="/" className="flex items-center gap-3 group">
                     <Image
                         src="/fegors-logo.jpg"
                         alt="FEGORS Ltd Logo"
                         width={50}
                         height={50}
-                        className="rounded-lg"
+                        className="rounded-lg transition-transform duration-200 group-hover:scale-105"
                     />
-                    <span className="text-2xl font-heading font-bold text-fegors-black">
+                    <span className="text-2xl font-heading font-bold text-brand-black">
                         FEGORS
                     </span>
                 </Link>
@@ -52,9 +52,10 @@ export default function Header() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="text-fegors-black hover:text-fegors-green transition-colors duration-200 font-medium"
+                            className="text-brand-black hover:text-eco-green transition-colors duration-150 font-medium relative group"
                         >
                             {link.label}
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-eco-green transition-all duration-200 group-hover:w-full"></span>
                         </Link>
                     ))}
                 </div>
@@ -68,7 +69,7 @@ export default function Header() {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-fegors-black"
+                    className="md:hidden text-brand-black"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Toggle menu"
                 >
@@ -92,13 +93,13 @@ export default function Header() {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-white border-t border-fegors-gray animate-slide-down">
+                <div className="md:hidden bg-white border-t border-soft-grey animate-slide-down">
                     <div className="container-custom mx-auto px-6 py-4 flex flex-col gap-4">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="text-fegors-black hover:text-fegors-green transition-colors duration-200 font-medium py-2"
+                                className="text-brand-black hover:text-eco-green transition-colors duration-150 font-medium py-2"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 {link.label}

@@ -14,22 +14,22 @@ export default function SustainabilityCallout() {
     ];
 
     return (
-        <Section backgroundColor="seafoam" id="sustainability-callout">
+        <Section backgroundColor="eco" id="sustainability-callout">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Image */}
-                <div className="animate-fade-in-up">
+                <div className="animate-slide-in-left">
                     <Image
                         src="/eco_cleaning_equipment.webp"
                         alt="Eco-friendly water-based cleaning equipment"
                         width={600}
                         height={400}
-                        className="rounded-2xl shadow-lg"
+                        className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200"
                     />
                 </div>
 
                 {/* Content */}
-                <div className="animate-fade-in-up">
-                    <h2 className="text-fegors-black mb-6">
+                <div className="animate-slide-in-right">
+                    <h2 className="text-brand-black mb-6">
                         Sustainable Cleaning for a Healthier Future
                     </h2>
 
@@ -39,9 +39,13 @@ export default function SustainabilityCallout() {
 
                     <ul className="space-y-3 mb-8">
                         {benefits.map((benefit, index) => (
-                            <li key={index} className="flex items-start gap-3">
+                            <li
+                                key={index}
+                                className="flex items-start gap-3 animate-fade-in-up"
+                                style={{ animationDelay: `${index * 50}ms` }}
+                            >
                                 <svg
-                                    className="w-6 h-6 text-fegors-green flex-shrink-0 mt-0.5"
+                                    className="w-6 h-6 text-eco-green flex-shrink-0 mt-0.5"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"

@@ -47,21 +47,26 @@ export default function WhyChooseFegors() {
     return (
         <Section id="why-choose">
             <div className="text-center mb-12 animate-fade-in-up">
-                <h2 className="text-fegors-black mb-4">Why Choose Fegors</h2>
+                <h2 className="text-brand-black mb-4">Why Choose Fegors</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
                     We combine cutting-edge eco-technology with professional expertise to deliver exceptional cleaning that&apos;s good for you and the planet.
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {features.map((feature, index) => (
-                    <Card
+                    <div
                         key={index}
-                        icon={feature.icon}
-                        title={feature.title}
-                        description={feature.description}
+                        className="animate-fade-in-up"
+                        style={{ animationDelay: `${index * 100}ms` }}
                     >
-                    </Card>
+                        <Card
+                            icon={feature.icon}
+                            title={feature.title}
+                            description={feature.description}
+                        >
+                        </Card>
+                    </div>
                 ))}
             </div>
         </Section>

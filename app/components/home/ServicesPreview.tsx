@@ -48,32 +48,37 @@ export default function ServicesPreview() {
     ];
 
     return (
-        <Section backgroundColor="mist" id="services">
+        <Section backgroundColor="grey" id="services">
             <div className="text-center mb-12 animate-fade-in-up">
-                <h2 className="text-fegors-black mb-4">Our Services</h2>
+                <h2 className="text-brand-black mb-4">Our Services</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
                     Comprehensive cleaning solutions tailored to your unique needs, from homes to commercial spaces.
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in-up">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {services.map((service, index) => (
-                    <Card
+                    <div
                         key={index}
-                        icon={service.icon}
-                        title={service.title}
-                        description={service.description}
+                        className="animate-fade-in-up"
+                        style={{ animationDelay: `${index * 100}ms` }}
                     >
-                        <Link
-                            href={service.href}
-                            className="inline-flex items-center text-fegors-green font-semibold hover:text-fegors-green-hover transition-colors duration-200"
+                        <Card
+                            icon={service.icon}
+                            title={service.title}
+                            description={service.description}
                         >
-                            Learn More
-                            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </Link>
-                    </Card>
+                            <Link
+                                href={service.href}
+                                className="inline-flex items-center text-eco-green font-semibold hover:text-eco-green-hover transition-colors duration-150 group"
+                            >
+                                Learn More
+                                <svg className="w-4 h-4 ml-2 transition-transform duration-150 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                            </Link>
+                        </Card>
+                    </div>
                 ))}
             </div>
         </Section>

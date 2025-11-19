@@ -1,30 +1,43 @@
 /* Import Google Fonts - MUST BE FIRST */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 @import "tailwindcss";
 
-/* Custom Tailwind Theme Extensions */
+/* Custom Tailwind Theme Extensions - FEGORS BRAND GUIDE */
 @theme inline {
-  /* Colors - FEGORS Palette */
-  --color-fegors-black: #000000;
-  --color-fegors-white: #FFFFFF;
-  --color-fegors-green: #0F7A66;
-  --color-fegors-green-hover: #0d6656;
-  --color-fegors-blue: #2A4E7A;
-  --color-fegors-gray: #E6E6E6;
-  --color-fegors-mist: #F7F9F8;
-  --color-fegors-seafoam: #DAEFE8;
+  /* Primary Brand Colors */
+  --color-eco-green: #4CAF50;
+  --color-deep-navy: #0A2540;
+  --color-brand-white: #FFFFFF;
+  --color-brand-black: #000000;
+
+  /* Secondary Brand Colors */
+  --color-soft-grey: #F4F4F4;
+  --color-sky-blue: #5BC0EB;
+
+  /* Semantic Color Variants */
+  --color-eco-green-hover: #45a049;
+  --color-eco-green-light: #81c784;
+  --color-deep-navy-light: #1a3a5f;
 
   /* Typography */
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Border Radius */
+  --radius-card: 0.75rem; /* 12px */
+  --radius-button: 0.375rem; /* 6px */
+
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+  --transition-medium: 250ms ease-out;
 }
 
 /* Base Styles */
 body {
   background: white;
-  color: black;
-  font-family: 'Inter', sans-serif;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +48,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000000;
 }
 
 h1 {
@@ -72,13 +86,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom Animations */
+/* Custom Animations - Brand Guide: Gentle, 150-250ms */
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -89,7 +102,6 @@ html {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -98,25 +110,87 @@ html {
 @keyframes slide-down {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation Utility Classes */
 .animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
+  animation: fade-in-up 0.25s ease-out forwards;
 }
 
 .animate-fade-in {
-  animation: fade-in 0.4s ease-out forwards;
+  animation: fade-in 0.2s ease-out forwards;
 }
 
 .animate-slide-down {
-  animation: slide-down 0.3s ease-out forwards;
+  animation: slide-down 0.2s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.25s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.25s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.25s ease-out forwards;
+}
+
+/* Staggered Animation Delays */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
 }
 
 /* Component utility classes */
@@ -156,57 +230,78 @@ html {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
+  border-radius: 0.375rem;
   font-weight: 500;
-  transition: all 0.2s ease-out;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 150ms ease-out;
+  cursor: pointer;
 }
 
 .btn-primary {
-  background-color: #0F7A66;
+  background-color: #4CAF50;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #0d6656;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);
+  background-color: #45a049;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
-  border: 2px solid black;
-  color: black;
+  border: 2px solid #0A2540;
+  color: #0A2540;
+  background-color: transparent;
 }
 
 .btn-secondary:hover {
-  background-color: black;
+  background-color: #0A2540;
   color: white;
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.2);
 }
 
 .btn-cta {
-  background-color: #0F7A66;
+  background-color: #4CAF50;
   color: white;
   padding: 1rem 2rem;
   font-size: 1.125rem;
   font-weight: 600;
+  border-radius: 0.375rem;
 }
 
 .btn-cta:hover {
-  background-color: #0d6656;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);
+  background-color: #45a049;
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  transform: translateY(-2px);
 }
 
 .card {
   background-color: white;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  transition: all 0.2s ease-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 200ms ease-out;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .hover-lift {
-  transition: all 0.2s ease-out;
+  transition: all 200ms ease-out;
 }
 
 .hover-lift:hover {
-  transform: translateY(-0.25rem);
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Eco-themed gradient backgrounds */
+.bg-gradient-eco {
+  background: linear-gradient(135deg, #f0f9f0 0%, #ffffff 100%);
+}
+
+.bg-gradient-sky {
+  background: linear-gradient(135deg, #e8f6fc 0%, #ffffff 100%);
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(135deg, rgba(10, 37, 64, 0.95) 0%, rgba(10, 37, 64, 0.85) 100%);
 }
