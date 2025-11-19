@@ -29,8 +29,8 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white shadow-lg border-b border-gray-100'
-                    : 'bg-white/90 backdrop-blur-md'
+                ? 'bg-white shadow-lg border-b border-gray-100'
+                : 'bg-white/90 backdrop-blur-md'
                 }`}
         >
             <nav className="container-custom mx-auto px-4 md:px-6 py-3 md:py-4">
@@ -38,9 +38,9 @@ export default function Header() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center group">
                         <Image
-                            src="https://ik.imagekit.io/r9a7zbqsf/Fegors%20.JPG"
+                            src="https://ik.imagekit.io/r9a7zbqsf/fegors-logo.JPG"
                             alt="FEGORS Ltd Logo"
-                            width={120}
+                            width={140}
                             height={45}
                             className="transition-transform duration-200 group-hover:scale-105"
                         />
