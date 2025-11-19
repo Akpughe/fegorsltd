@@ -16,12 +16,12 @@ export default function HybridHero() {
     }, []);
 
     return (
-        <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white">
+        <section className="relative min-h-screen lg:h-screen flex items-center justify-center overflow-hidden bg-white pt-20 lg:pt-0">
             {/* Split Layout - Premium Minimalist meets Storytelling */}
-            <div className="container-custom mx-auto px-6 h-full">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 h-full items-center">
+            <div className="container-custom mx-auto px-6 py-12 lg:py-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left Side - Content (Premium Minimalist) */}
-                    <div className="relative z-10 space-y-8">
+                    <div className="relative z-10 space-y-8 animate-fade-in-up">
                         {/* Trust Badge - Transparency Element */}
                         <div className="inline-flex items-center gap-2 bg-eco-green/10 border border-eco-green/20 rounded-full px-5 py-2">
                             <svg className="w-5 h-5 text-eco-green" fill="currentColor" viewBox="0 0 20 20">
@@ -85,10 +85,10 @@ export default function HybridHero() {
                     </div>
 
                     {/* Right Side - Image with Parallax (Minimalist meets Storytelling) */}
-                    <div className="relative h-full hidden lg:block">
+                    <div className="relative h-[400px] lg:h-[600px] hidden lg:block animate-fade-in animation-delay-200">
                         {/* Main Image - High Quality Unsplash */}
                         <div
-                            className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl"
+                            className="relative h-full rounded-3xl overflow-hidden shadow-2xl"
                             style={{
                                 transform: `translateY(${scrollY * 0.1}px)`,
                             }}
@@ -103,7 +103,7 @@ export default function HybridHero() {
                         </div>
 
                         {/* Floating Stats Card - Glassmorphism (Dark Mode Element) */}
-                        <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-xl">
+                        <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-xl animate-slide-in-right animation-delay-400">
                             <div className="grid grid-cols-3 gap-4 text-center">
                                 <div>
                                     <div className="text-3xl font-black text-eco-green">99.9%</div>

@@ -62,40 +62,74 @@ export default function TrustComparison() {
                 </div>
 
                 {/* Comparison Table - Trust & Transparency */}
-                <div className="mb-16 overflow-hidden rounded-3xl border-2 border-gray-100 shadow-xl">
-                    <div className="overflow-x-auto">
-                        <table className="w-full">
-                            <thead>
-                                <tr className="bg-soft-grey">
-                                    <th className="text-left p-6 font-bold text-brand-black text-lg">Feature</th>
-                                    <th className="text-left p-6 font-bold text-gray-600 text-lg">Traditional Cleaning</th>
-                                    <th className="text-left p-6 font-bold text-eco-green text-lg bg-eco-green/5">Fegors Water-Based</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {comparisons.map((item, index) => (
-                                    <tr key={index} className="border-t border-gray-100 hover:bg-gray-50 transition-colors">
-                                        <td className="p-6 font-semibold text-brand-black">{item.feature}</td>
-                                        <td className="p-6 text-gray-600">
-                                            <div className="flex items-start gap-2">
-                                                <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                                                </svg>
-                                                <span>{item.traditional}</span>
-                                            </div>
-                                        </td>
-                                        <td className="p-6 bg-eco-green/5">
-                                            <div className="flex items-start gap-2">
-                                                <svg className="w-5 h-5 text-eco-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                                                </svg>
-                                                <span className="font-semibold text-brand-black">{item.fegors}</span>
-                                            </div>
-                                        </td>
+                <div className="mb-16">
+                    {/* Mobile - Card Layout */}
+                    <div className="lg:hidden space-y-6">
+                        {comparisons.map((item, index) => (
+                            <div key={index} className="bg-white rounded-2xl border-2 border-gray-100 overflow-hidden shadow-lg">
+                                <div className="bg-soft-grey p-4">
+                                    <h4 className="font-bold text-brand-black">{item.feature}</h4>
+                                </div>
+                                <div className="p-4 space-y-4">
+                                    <div>
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                            </svg>
+                                            <span className="text-xs font-bold text-gray-500 uppercase">Traditional</span>
+                                        </div>
+                                        <p className="text-sm text-gray-600 pl-7">{item.traditional}</p>
+                                    </div>
+                                    <div className="bg-eco-green/5 p-3 rounded-lg">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <svg className="w-5 h-5 text-eco-green" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                            </svg>
+                                            <span className="text-xs font-bold text-eco-green uppercase">Fegors</span>
+                                        </div>
+                                        <p className="text-sm font-semibold text-brand-black pl-7">{item.fegors}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Desktop - Table Layout */}
+                    <div className="hidden lg:block overflow-hidden rounded-3xl border-2 border-gray-100 shadow-xl">
+                        <div className="overflow-x-auto">
+                            <table className="w-full">
+                                <thead>
+                                    <tr className="bg-soft-grey">
+                                        <th className="text-left p-6 font-bold text-brand-black text-lg">Feature</th>
+                                        <th className="text-left p-6 font-bold text-gray-600 text-lg">Traditional Cleaning</th>
+                                        <th className="text-left p-6 font-bold text-eco-green text-lg bg-eco-green/5">Fegors Water-Based</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {comparisons.map((item, index) => (
+                                        <tr key={index} className="border-t border-gray-100 hover:bg-gray-50 transition-colors">
+                                            <td className="p-6 font-semibold text-brand-black">{item.feature}</td>
+                                            <td className="p-6 text-gray-600">
+                                                <div className="flex items-start gap-2">
+                                                    <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                                    </svg>
+                                                    <span>{item.traditional}</span>
+                                                </div>
+                                            </td>
+                                            <td className="p-6 bg-eco-green/5">
+                                                <div className="flex items-start gap-2">
+                                                    <svg className="w-5 h-5 text-eco-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                                    </svg>
+                                                    <span className="font-semibold text-brand-black">{item.fegors}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
