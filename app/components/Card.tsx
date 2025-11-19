@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface CardProps {
+export interface CardProps {
     children?: React.ReactNode;
     icon?: React.ReactNode;
     title?: string;
@@ -9,14 +9,14 @@ interface CardProps {
     hoverable?: boolean;
 }
 
-export default function Card({
+const Card: React.FC<CardProps> = ({
     children,
     icon,
     title,
     description,
     className = '',
     hoverable = true
-}: CardProps) {
+}) => {
     const hoverClass = hoverable ? 'hover-lift' : '';
 
     return (
@@ -42,4 +42,6 @@ export default function Card({
             {children}
         </div>
     );
-}
+};
+
+export default Card;
