@@ -98,12 +98,6 @@ export default function MinimalistServices() {
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  {/* Floating Badge */}
-                  <div className="absolute -bottom-4 -right-4 bg-eco-green text-white rounded-2xl px-6 py-3 shadow-xl">
-                    <div className="text-sm font-semibold">
-                      From £{(index + 1) * 25}/visit
-                    </div>
-                  </div>
                 </div>
 
                 {/* Content */}
