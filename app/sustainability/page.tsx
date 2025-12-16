@@ -41,14 +41,14 @@ export default function SustainabilityPage() {
       {/* Hero Section */}
       <section className="relative h-[600px] lg:h-[700px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=80"
+          src="https://ik.imagekit.io/r9a7zbqsf/Sustainable,%20Chemical-Reduced%20Cleaning.webp"
           alt="Green sustainable environment"
           width={1600}
           height={900}
           className="w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-eco-green/90 via-eco-green/75 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">

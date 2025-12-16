@@ -57,7 +57,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[500px] lg:h-[600px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
+          src="https://ik.imagekit.io/r9a7zbqsf/Community%20Love%20&%20Protection.webp"
           alt="Professional cleaning team"
           width={1600}
           height={900}
