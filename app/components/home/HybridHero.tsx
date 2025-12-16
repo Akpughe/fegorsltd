@@ -115,8 +115,10 @@ export default function HybridHero() {
                   />
                 </svg>
               </Link>
-              <Link
-                href="/how-it-works"
+              <a
+                href="https://calendly.com/fegors"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 hover:border-eco-green text-brand-black hover:text-eco-green font-semibold px-8 py-4 rounded-xl transition-all duration-200">
                 <svg
                   className="w-5 h-5"
@@ -129,7 +131,7 @@ export default function HybridHero() {
                   />
                 </svg>
                 Book a Visit
-              </Link>
+              </a>
             </div>
           </div>
 
