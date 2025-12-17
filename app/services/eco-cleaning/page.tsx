@@ -52,7 +52,7 @@ export default function EcoCleaningPage() {
       step: "02",
       title: "Preparation",
       description:
-        "Our team arrives with the Tennant T300 and prepares the area for chemical-free cleaning.",
+        "Our team arrives with advanced eco-cleaning equipment and prepares the area for chemical-free cleaning.",
     },
     {
       step: "03",
@@ -102,8 +102,8 @@ export default function EcoCleaningPage() {
                 Low-Chemical & Water-Based Cleaning
               </h1>
               <p className="text-lg md:text-xl text-white/95 leading-relaxed mb-8 animate-fade-in-up animation-delay-100">
-                We use advanced technology (like the Tennant T300) to clean
-                effectively without harsh chemicals.
+                We use advanced water-based technology to clean effectively
+                without harsh chemicals.
               </p>
               <Link
                 href="/quote"
@@ -187,7 +187,7 @@ export default function EcoCleaningPage() {
         </div>
       </section>
 
-      {/* Tennant T300 Section */}
+      {/* Technology Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -203,7 +203,7 @@ export default function EcoCleaningPage() {
                 />
                 {/* Badge */}
                 <div className="absolute top-6 right-6 bg-eco-green text-white px-6 py-3 rounded-full font-bold text-sm shadow-lg">
-                  Tennant T300
+                  Advanced Eco Technology
                 </div>
               </div>
             </ScrollAnimation>
@@ -213,16 +213,16 @@ export default function EcoCleaningPage() {
               <div>
                 <div className="inline-block px-4 py-2 bg-eco-green/10 rounded-full mb-4">
                   <span className="text-eco-green font-semibold text-sm uppercase tracking-wide">
-                    Advanced Technology
+                    Revolutionary Technology
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-black mb-6">
-                  Powered by Tennant T300
+                  Powered by Pure Water Innovation
                 </h2>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  The Tennant T300 is an industry-leading cleaning machine that
-                  uses innovative ec-H2O technology to convert water into a
-                  powerful cleaning solution — without any chemicals.
+                  Our industry-leading cleaning technology uses innovative water
+                  ionization to convert pure water into a powerful cleaning
+                  solution — without any chemicals.
                 </p>
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   This revolutionary technology electrically converts water into
