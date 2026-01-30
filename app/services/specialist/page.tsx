@@ -6,7 +6,7 @@ import ScrollAnimation from "../../components/ScrollAnimation";
 export default function SpecialistCleaningPage() {
   const services = [
     {
-      title: "Builders&apos; clean",
+      title: "Builders' clean",
       description:
         "Initial clean to remove construction dust, debris, and leftover materials.",
       icon: "🏗️",
@@ -233,7 +233,7 @@ export default function SpecialistCleaningPage() {
                   Why Choose Our Specialist Services?
                 </h2>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  When standard cleaning isn't enough, our specialist team
+                  When standard cleaning isn&apos;t enough, our specialist team
                   brings advanced skills and equipment to solve your most
                   challenging cleaning needs.
                 </p>

@@ -7,7 +7,7 @@ export default function CaseStudiesPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-deep-navy to-brand-black py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-linear-to-br from-deep-navy to-brand-black py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-20 w-72 h-72 bg-eco-green/10 rounded-full blur-3xl animate-float"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-sky-blue/10 rounded-full blur-3xl animate-float-delayed"></div>
@@ -219,7 +219,7 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-eco-green to-eco-green-hover relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-eco-green to-eco-green-hover relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -232,8 +232,8 @@ export default function CaseStudiesPage() {
                 Have a Project in Mind?
               </h2>
               <p className="text-lg md:text-xl text-white/95 mb-8 leading-relaxed">
-                Whether it's a commercial space or a new development, we have
-                the expertise to deliver exceptional results.
+                Whether it&apos;s a commercial space or a new development, we
+                have the expertise to deliver exceptional results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

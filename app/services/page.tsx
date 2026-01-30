@@ -11,8 +11,7 @@ export default function ServicesPage() {
       description:
         "Whether you need regular cleaning or a full deep clean, we help keep your home fresh, healthy, and comfortable.",
       icon: "🏠",
-      image:
-        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80",
+      image: "https://ik.imagekit.io/r9a7zbqsf/IMG_8253.HEIC",
       features: [
         "Routine cleaning",
         "Deep cleaning",
@@ -32,7 +31,7 @@ export default function ServicesPage() {
         "We provide reliable, flexible cleaning for offices, tech spaces, co-working hubs, retail, and more. Including everyday commercial cleaning for Skyscanner Edinburgh.",
       icon: "🏢",
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+        "https://ik.imagekit.io/r9a7zbqsf/PHOTO-2026-01-14-12-43-49%204.jpg",
       features: [
         "Daily/weekly office cleaning",
         "Workstation cleaning",

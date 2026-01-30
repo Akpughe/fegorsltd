@@ -90,7 +90,7 @@ export default function ResidentialCleaningPage() {
           className="w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-black/70 via-brand-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-brand-black/70 via-brand-black/50 to-transparent"></div>
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">
@@ -166,7 +166,7 @@ export default function ResidentialCleaningPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-grey/40 to-white">
+      <section className="py-16 md:py-24 bg-linear-to-br from-soft-grey/40 to-white">
         <div className="container-custom mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
@@ -189,14 +189,14 @@ export default function ResidentialCleaningPage() {
                   Why Choose Our Residential Cleaning?
                 </h2>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  We understand that your home is your sanctuary. That's why we
-                  deliver exceptional cleaning services with attention to detail
-                  and respect for your space.
+                  We understand that your home is your sanctuary. That&apos;s
+                  why we deliver exceptional cleaning services with attention to
+                  detail and respect for your space.
                 </p>
                 <ul className="space-y-4">
                   {benefits.map((benefit) => (
                     <li key={benefit} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-eco-green/20 flex items-center justify-center mt-1">
+                      <div className="shrink-0 w-6 h-6 rounded-full bg-eco-green/20 flex items-center justify-center mt-1">
                         <svg
                           className="w-4 h-4 text-eco-green"
                           fill="currentColor"
@@ -243,7 +243,7 @@ export default function ResidentialCleaningPage() {
                 delay={index * 100}>
                 <div className="relative">
                   <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-eco-green to-eco-green-hover text-white text-2xl font-black mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-linear-to-br from-eco-green to-eco-green-hover text-white text-2xl font-black mb-6 shadow-lg">
                       {item.step}
                     </div>
                     <h3 className="text-xl font-heading font-bold text-brand-black mb-3">
@@ -255,7 +255,7 @@ export default function ResidentialCleaningPage() {
                   </div>
                   {/* Connector Line (hidden on last item and mobile) */}
                   {index < process.length - 1 && (
-                    <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-gradient-to-r from-eco-green/30 to-transparent"></div>
+                    <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-linear-to-r from-eco-green/30 to-transparent"></div>
                   )}
                 </div>
               </ScrollAnimation>
@@ -265,7 +265,7 @@ export default function ResidentialCleaningPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-eco-green to-eco-green-hover relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-eco-green to-eco-green-hover relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>

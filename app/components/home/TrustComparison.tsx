@@ -142,14 +142,16 @@ export default function TrustComparison() {
                   {comparisons.map((item, index) => (
                     <tr
                       key={index}
-                      className="border-t border-gray-100 hover:bg-gray-50 transition-colors">
+                      className={`border-t border-gray-100 ${
+                        index % 2 === 0 ? "bg-white" : "bg-gray-50/50"
+                      }`}>
                       <td className="p-6 font-semibold text-brand-black">
                         {item.feature}
                       </td>
                       <td className="p-6 text-gray-600">
-                        <div className="flex items-start gap-2">
+                        <div className="flex items-center gap-2">
                           <svg
-                            className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5"
+                            className="w-5 h-5 text-red-500 flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20">
                             <path
@@ -158,13 +160,13 @@ export default function TrustComparison() {
                               clipRule="evenodd"
                             />
                           </svg>
-                          <span>{item.traditional}</span>
+                          {item.traditional}
                         </div>
                       </td>
                       <td className="p-6 bg-eco-green/5">
-                        <div className="flex items-start gap-2">
+                        <div className="flex items-center gap-2 font-semibold text-brand-black">
                           <svg
-                            className="w-5 h-5 text-eco-green flex-shrink-0 mt-0.5"
+                            className="w-5 h-5 text-eco-green flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20">
                             <path
@@ -173,9 +175,7 @@ export default function TrustComparison() {
                               clipRule="evenodd"
                             />
                           </svg>
-                          <span className="font-semibold text-brand-black">
-                            {item.fegors}
-                          </span>
+                          {item.fegors}
                         </div>
                       </td>
                     </tr>
@@ -187,18 +187,17 @@ export default function TrustComparison() {
         </div>
 
         {/* Certifications & Trust Badges - Premium Grid */}
-        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    {certifications.map((cert, index) => (
-                        <div
-                            key={index}
-                            className="text-center p-6 bg-white border-2 border-gray-100 rounded-2xl hover:border-eco-green/30 hover:shadow-lg transition-all duration-200"
-                        >
-                            <div className="text-4xl mb-3">{cert.icon}</div>
-                            <div className="font-bold text-brand-black mb-1">{cert.name}</div>
-                            <div className="text-sm text-gray-600">{cert.desc}</div>
-                        </div>
-                    ))}
-                </div> */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {certifications.map((cert, index) => (
+            <div
+              key={index}
+              className="text-center p-6 bg-white border-2 border-gray-100 rounded-2xl hover:border-eco-green/30 hover:shadow-lg transition-all duration-200">
+              <div className="text-4xl mb-3">{cert.icon}</div>
+              <div className="font-bold text-brand-black mb-1">{cert.name}</div>
+              <div className="text-sm text-gray-600">{cert.desc}</div>
+            </div>
+          ))}
+        </div>
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">

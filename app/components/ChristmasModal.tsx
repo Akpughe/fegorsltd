@@ -5,21 +5,22 @@ import Image from "next/image";
 import { isChristmasSeason } from "../utils/christmas";
 
 export default function ChristmasModal() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [isClosed, setIsClosed] = useState(false);
 
   useEffect(() => {
-    // Only show modal if it's Christmas season
-    if (isChristmasSeason()) {
-      setIsOpen(true);
-    }
+    setMounted(true);
   }, []);
+
+  const isOpen = mounted && !isClosed && isChristmasSeason();
+  const closeModal = () => setIsClosed(true);
 
   useEffect(() => {
     if (!isOpen) return;
 
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setIsOpen(false);
+        closeModal();
       }
     };
 
@@ -37,11 +38,11 @@ export default function ChristmasModal() {
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in"
-      onClick={() => setIsOpen(false)}
+      className="fixed inset-0 z-100 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in"
+      onClick={closeModal}
       onKeyDown={(e) => {
         if (e.key === "Escape") {
-          setIsOpen(false);
+          closeModal();
         }
       }}
       role="dialog"
@@ -53,12 +54,12 @@ export default function ChristmasModal() {
         onClick={(e) => e.stopPropagation()}
         onKeyDown={(e) => {
           if (e.key === "Escape") {
-            setIsOpen(false);
+            closeModal();
           }
         }}>
         {/* Close Button */}
         <button
-          onClick={() => setIsOpen(false)}
+          onClick={closeModal}
           className="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white rounded-full p-2 transition-all duration-200 shadow-lg hover:scale-110"
           aria-label="Close modal"
           type="button">

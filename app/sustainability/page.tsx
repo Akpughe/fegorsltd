@@ -47,27 +47,27 @@ export default function SustainabilityPage() {
           height={900}
           className="w-full h-full object-cover"
         />
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
+        {/* Overlay - Stronger on mobile, gradient on desktop */}
+        <div className="absolute inset-0 bg-black/50 lg:bg-linear-to-r lg:from-black/80 lg:via-black/40 lg:to-transparent"></div>
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">
           <div className="container-custom mx-auto px-6">
-            <div className="max-w-3xl">
-              <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 animate-fade-in">
-                <span className="text-white font-semibold text-sm uppercase tracking-wide">
+            <div className="max-w-3xl text-left">
+              <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 animate-fade-in border border-white/10">
+                <span className="text-white font-semibold text-xs md:text-sm uppercase tracking-wider">
                   People First. Community Always.
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-white mb-6 animate-fade-in-up leading-tight">
+              <h1 className="text-2xl md:text-5xl lg:text-6xl font-heading font-black text-white mb-6 animate-fade-in-up leading-tight drop-shadow-2xl">
                 OUR COMMITMENT TO COMMUNITY & CLEANER FUTURES
               </h1>
-              <p className="text-lg md:text-xl text-white/95 leading-relaxed mb-8 animate-fade-in-up animation-delay-100 font-medium">
+              <p className="text-sm md:text-xl text-white/95 leading-relaxed mb-8 animate-fade-in-up animation-delay-100 font-medium drop-shadow-md">
                 Our work is built on one simple belief: the health, dignity and
-                wellbeing of the people of Scotland — and the wider UK — must be
+                wellbeing of the people of Scotland and the wider UK must be
                 protected in every space we clean.
               </p>
-              <div className="text-white/90 text-lg animate-fade-in-up animation-delay-200">
+              <div className="text-white/90 text-xs md:text-lg animate-fade-in-up animation-delay-200 drop-shadow-md">
                 <p>
                   Every decision we make, every service we deliver, and every
                   innovation we adopt is guided by our responsibility to the
@@ -80,9 +80,9 @@ export default function SustainabilityPage() {
       </section>
 
       {/* A Cleaner Scotland / Safer Spaces */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-12 md:py-28 bg-white">
         <div className="container-custom mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <ScrollAnimation animationType="slide-right">
               <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
@@ -96,13 +96,13 @@ export default function SustainabilityPage() {
             </ScrollAnimation>
             <ScrollAnimation animationType="slide-left">
               <div>
-                <span className="text-eco-green font-bold text-sm tracking-widest uppercase mb-2 block">
+                <span className="text-eco-green font-bold text-xs md:text-sm tracking-widest uppercase mb-2 block">
                   A Cleaner Scotland Starts With Us All
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-6">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-6">
                   Championing Safer Spaces
                 </h2>
-                <div className="space-y-6 text-lg text-gray-600 leading-relaxed text-justify">
+                <div className="space-y-6 text-base md:text-lg text-gray-600 leading-relaxed lg:text-justify">
                   <p>
                     We are committed to creating environments where families,
                     workers, patients, and visitors can feel safe.
@@ -120,23 +120,23 @@ export default function SustainabilityPage() {
       </section>
 
       {/* Investing in People */}
-      <section className="py-20 md:py-28 bg-soft-grey/30 relative">
+      <section className="py-12 md:py-28 bg-soft-grey/30 relative">
         <div className="container-custom mx-auto px-6">
           <ScrollAnimation animationType="fade-up">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-black mb-4">
+            <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-black text-brand-black mb-4 px-4 md:px-0">
                 Investing in People, Skills & Future Technologies
               </h2>
-              <p className="text-xl text-eco-green font-bold">
+              <p className="text-lg md:text-xl text-eco-green font-bold">
                 Training for Tomorrow
               </p>
             </div>
           </ScrollAnimation>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             <ScrollAnimation animationType="slide-right">
               <div className="space-y-8">
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                   We believe Scotland deserves a workforce equipped with the
                   latest skills in sustainable cleaning. That’s why we invest
                   heavily in:
@@ -167,7 +167,7 @@ export default function SustainabilityPage() {
                   ))}
                 </div>
                 <p className="text-lg font-medium text-brand-black italic border-l-4 border-eco-green pl-4">
-                  &ldquo;Our people are not just cleaners — they are community
+                  &ldquo;Our people are not just cleaners, they are community
                   protectors, trained in advanced methods that keep environments
                   healthier.&rdquo;
                 </p>
@@ -188,17 +188,17 @@ export default function SustainabilityPage() {
       </section>
 
       {/* Sustainability at the Heart */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-12 md:py-28 bg-white">
         <div className="container-custom mx-auto px-6">
           <ScrollAnimation animationType="fade-up">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-eco-green font-bold text-sm tracking-widest uppercase mb-2 block">
+            <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+              <span className="text-eco-green font-bold text-xs md:text-sm tracking-widest uppercase mb-2 block">
                 Sustainability at the Heart of Our Service
               </span>
-              <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-black mb-6">
+              <h2 className="text-2xl md:text-4xl font-heading font-black text-brand-black mb-6">
                 Protecting What Matters Most
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                 Our sustainability journey begins with the people we serve.
               </p>
             </div>
@@ -210,7 +210,7 @@ export default function SustainabilityPage() {
                 key={index}
                 animationType="fade-up"
                 delay={index * 100}>
-                <div className="bg-gradient-to-br from-soft-grey/10 to-white p-8 rounded-2xl h-full border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="bg-linear-to-br from-soft-grey/10 to-white p-8 rounded-2xl h-full border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div className="text-4xl mb-4">{item.icon}</div>
                   <p className="text-gray-700 font-medium leading-relaxed">
                     {item.text}
@@ -232,13 +232,13 @@ export default function SustainabilityPage() {
       </section>
 
       {/* Supporting Net Zero */}
-      <section className="py-20 md:py-28 bg-brand-black text-white relative overflow-hidden">
+      <section className="py-12 md:py-28 bg-brand-black text-white relative overflow-hidden">
         {/* Decorative blobs */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-eco-green/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-sky-blue/10 rounded-full blur-3xl pointer-events-none translate-y-1/2 -translate-x-1/2"></div>
 
         <div className="container-custom mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <ScrollAnimation animationType="fade-up">
               <div className="relative h-[400px] lg:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/10">
                 <Image
@@ -247,7 +247,7 @@ export default function SustainabilityPage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent flex items-end p-8">
                   <p className="text-white text-lg font-medium">
                     Contributing to the UK’s wider target of achieving Net Zero.
                   </p>
@@ -256,10 +256,10 @@ export default function SustainabilityPage() {
             </ScrollAnimation>
             <ScrollAnimation animationType="slide-left">
               <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black mb-6">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-black mb-6">
                   Supporting the UK’s Net Zero Vision
                 </h2>
-                <p className="text-lg text-white/80 leading-relaxed mb-8">
+                <p className="text-base md:text-lg text-white/80 leading-relaxed mb-8">
                   Our methods align with national environmental goals,
                   contributing to the UK’s wider target of achieving Net Zero.
                   Through efficient cleaning solutions and community-first
@@ -284,17 +284,17 @@ export default function SustainabilityPage() {
       </section>
 
       {/* United for Tomorrow - Conclusion */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-eco-green/10 to-white">
+      <section className="py-12 md:py-28 bg-linear-to-br from-eco-green/10 to-white">
         <div className="container-custom mx-auto px-6 text-center">
           <ScrollAnimation animationType="scale">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-8">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-8">
                 United for a Healthier Tomorrow
               </h2>
-              <div className="space-y-6 text-xl md:text-2xl text-gray-700 leading-relaxed font-light">
+              <div className="space-y-6 text-lg md:text-2xl text-gray-700 leading-relaxed font-light">
                 <p>
                   The heart of our sustainability commitment isn’t a machine or
-                  a technology —{" "}
+                  a technology,{" "}
                   <span className="font-bold text-eco-green">it’s people.</span>
                 </p>
                 <p>
@@ -302,7 +302,7 @@ export default function SustainabilityPage() {
                   businesses who deserve a safe and healthy environment every
                   single day.
                 </p>
-                <p className="font-bold text-brand-black mt-8 text-3xl">
+                <p className="font-bold text-brand-black mt-8 text-2xl md:text-3xl">
                   And we’re proud to play our part.
                 </p>
               </div>

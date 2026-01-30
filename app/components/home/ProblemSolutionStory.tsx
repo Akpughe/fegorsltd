@@ -20,7 +20,7 @@ export default function ProblemSolutionStory() {
               <div className="space-y-4 text-lg text-gray-700">
                 <div className="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
                   <svg
-                    className="w-6 h-6 text-red-500 flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-red-500 shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path
@@ -36,7 +36,7 @@ export default function ProblemSolutionStory() {
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
                   <svg
-                    className="w-6 h-6 text-red-500 flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-red-500 shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path
@@ -52,7 +52,7 @@ export default function ProblemSolutionStory() {
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
                   <svg
-                    className="w-6 h-6 text-red-500 flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-red-500 shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path
@@ -73,7 +73,7 @@ export default function ProblemSolutionStory() {
             <div className="relative">
               <div className="absolute -inset-4 bg-red-100 rounded-3xl -rotate-3"></div>
               <div className="relative bg-white rounded-2xl p-2 shadow-xl transform rotate-2">
-                <div className="aspect-square bg-gradient-to-br from-red-200 to-red-400 rounded-xl flex items-center justify-center">
+                <div className="aspect-square bg-linear-to-br from-red-200 to-red-400 rounded-xl flex items-center justify-center">
                   <svg
                     className="w-32 h-32 text-red-600"
                     fill="none"
@@ -95,7 +95,7 @@ export default function ProblemSolutionStory() {
         {/* The Transition Arrow */}
         <div className="flex justify-center mb-32">
           <div className="relative">
-            <div className="w-16 h-16 bg-gradient-to-br from-eco-green to-sky-blue rounded-full flex items-center justify-center shadow-lg">
+            <div className="w-16 h-16 bg-linear-to-br from-eco-green to-sky-blue rounded-full flex items-center justify-center shadow-lg">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -146,9 +146,9 @@ export default function ProblemSolutionStory() {
                 hospital-grade cleanliness with nothing but pure water.
               </p>
               <div className="space-y-4">
-                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-eco-green/10 to-transparent rounded-lg border-l-4 border-eco-green">
+                <div className="flex items-start gap-4 p-4 bg-linear-to-r from-eco-green/10 to-transparent rounded-lg border-l-4 border-eco-green">
                   <svg
-                    className="w-6 h-6 text-eco-green flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-eco-green shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path
@@ -165,9 +165,9 @@ export default function ProblemSolutionStory() {
                     sensitivities
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-sky-blue/10 to-transparent rounded-lg border-l-4 border-sky-blue">
+                <div className="flex items-start gap-4 p-4 bg-linear-to-r from-sky-blue/10 to-transparent rounded-lg border-l-4 border-sky-blue">
                   <svg
-                    className="w-6 h-6 text-sky-blue flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-sky-blue shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path
@@ -180,12 +180,12 @@ export default function ProblemSolutionStory() {
                     <strong className="text-brand-black">
                       Better for the planet:
                     </strong>{" "}
-                    Zero harmful runoff into Scotland's water systems
+                    Zero harmful runoff into Scotland&apos;s water systems
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-eco-green/10 to-transparent rounded-lg border-l-4 border-eco-green">
+                <div className="flex items-start gap-4 p-4 bg-linear-to-r from-eco-green/10 to-transparent rounded-lg border-l-4 border-eco-green">
                   <svg
-                    className="w-6 h-6 text-eco-green flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-eco-green shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path

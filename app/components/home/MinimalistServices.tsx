@@ -13,8 +13,7 @@ export default function MinimalistServices() {
         "End-of-tenancy",
         "Move-in/move-out",
       ],
-      image:
-        "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80",
+      image: "https://ik.imagekit.io/r9a7zbqsf/IMG_8253.HEIC",
       href: "/services/residential",
     },
     {
@@ -28,7 +27,7 @@ export default function MinimalistServices() {
         "Floor care",
       ],
       image:
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&q=80",
+        "https://ik.imagekit.io/r9a7zbqsf/PHOTO-2026-01-14-12-43-49%204.jpg",
       href: "/services/commercial",
     },
     {

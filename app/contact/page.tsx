@@ -72,7 +72,7 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -100,7 +100,7 @@ export default function ContactPage() {
 
   if (isSuccess) {
     return (
-      <main className="min-h-screen pt-20 flex items-center justify-center bg-gradient-to-br from-eco-green/5 to-white">
+      <main className="min-h-screen pt-20 flex items-center justify-center bg-linear-to-br from-eco-green/5 to-white">
         <div className="container-custom mx-auto px-6 py-16">
           <ScrollAnimation animationType="scale">
             <div className="max-w-2xl mx-auto text-center bg-white rounded-3xl shadow-2xl p-12">
@@ -122,8 +122,8 @@ export default function ContactPage() {
                 Message Sent Successfully!
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Thank you for contacting Fegors. We've received your message and
-                will get back to you within 24 hours.
+                Thank you for contacting Fegors. We&apos;ve received your
+                message and will get back to you within 24 hours.
               </p>
               <Link
                 href="/"
@@ -140,7 +140,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-deep-navy to-deep-navy-light py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-linear-to-br from-deep-navy to-deep-navy-light py-16 md:py-24 overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 bg-eco-green/10 rounded-full blur-3xl"></div>
@@ -179,7 +179,7 @@ export default function ContactPage() {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  className="block bg-gradient-to-br from-soft-grey/30 to-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-eco-green/20">
+                  className="block bg-linear-to-br from-soft-grey/30 to-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-eco-green/20">
                   <div className="text-4xl mb-4">{method.icon}</div>
                   <h3 className="text-xl font-heading font-bold text-brand-black mb-2">
                     {method.title}
@@ -196,7 +196,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Service Areas */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-grey/20 to-white">
+      <section className="py-16 md:py-24 bg-linear-to-br from-soft-grey/20 to-white">
         <div className="container-custom mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Form */}
@@ -377,7 +377,7 @@ export default function ContactPage() {
                         key={area}
                         className="flex items-center gap-2 text-gray-700">
                         <svg
-                          className="w-5 h-5 text-eco-green flex-shrink-0"
+                          className="w-5 h-5 text-eco-green shrink-0"
                           fill="currentColor"
                           viewBox="0 0 20 20">
                           <path
@@ -391,7 +391,7 @@ export default function ContactPage() {
                     ))}
                   </div>
                   <p className="text-sm text-gray-500 mt-6">
-                    Don't see your area?{" "}
+                    Don&apos;t see your area?{" "}
                     <Link
                       href="/quote"
                       className="text-eco-green font-semibold hover:underline">
@@ -403,7 +403,7 @@ export default function ContactPage() {
 
                 {/* Quick Links */}
                 <ScrollAnimation animationType="fade-up" delay={100}>
-                  <div className="bg-gradient-to-br from-eco-green to-eco-green-hover rounded-3xl shadow-xl p-8 text-white">
+                  <div className="bg-linear-to-br from-eco-green to-eco-green-hover rounded-3xl shadow-xl p-8 text-white">
                     <h3 className="text-xl font-heading font-bold mb-4">
                       Need a Quote?
                     </h3>
@@ -428,13 +428,13 @@ export default function ContactPage() {
       <section className="py-16 bg-white">
         <div className="container-custom mx-auto px-6">
           <ScrollAnimation animationType="fade-up">
-            <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-soft-grey/40 to-white rounded-3xl p-12 border-2 border-eco-green/10">
+            <div className="max-w-4xl mx-auto text-center bg-linear-to-br from-soft-grey/40 to-white rounded-3xl p-12 border-2 border-eco-green/10">
               <h2 className="text-3xl md:text-4xl font-heading font-black text-brand-black mb-4">
                 Ready to Get Started?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Whether you need residential, commercial, or specialist cleaning
-                services, we're here to deliver exceptional results.
+                services, we&apos;re here to deliver exceptional results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

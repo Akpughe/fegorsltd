@@ -87,7 +87,7 @@ export default function EcoCleaningPage() {
           className="w-full h-full object-cover"
         />
         {/* Overlay with Eco Green gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-eco-green/80 via-eco-green/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-eco-green/80 via-eco-green/60 to-transparent"></div>
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">
@@ -164,7 +164,7 @@ export default function EcoCleaningPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gradient-to-br from-eco-green to-eco-green-hover">
+      <section className="py-16 bg-linear-to-br from-eco-green to-eco-green-hover">
         <div className="container-custom mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -257,7 +257,7 @@ export default function EcoCleaningPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-eco-green/5 to-white">
+      <section className="py-16 md:py-24 bg-linear-to-br from-eco-green/5 to-white">
         <div className="container-custom mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Benefits List */}
@@ -268,12 +268,12 @@ export default function EcoCleaningPage() {
                 </h2>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                   Choose eco-cleaning for a healthier home, office, or facility
-                  that's free from toxic chemicals and harmful fumes.
+                  that&apos;s free from toxic chemicals and harmful fumes.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {benefits.map((benefit) => (
                     <li key={benefit} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 rounded-full bg-eco-green/20 flex items-center justify-center mt-0.5">
+                      <div className="shrink-0 w-6 h-6 rounded-full bg-eco-green/20 flex items-center justify-center mt-0.5">
                         <svg
                           className="w-4 h-4 text-eco-green"
                           fill="currentColor"
@@ -333,7 +333,7 @@ export default function EcoCleaningPage() {
                 delay={index * 100}>
                 <div className="relative">
                   <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-eco-green to-eco-green-hover text-white text-2xl font-black mb-6 shadow-lg">
+                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-linear-to-br from-eco-green to-eco-green-hover text-white text-2xl font-black mb-6 shadow-lg">
                       {item.step}
                     </div>
                     <h3 className="text-xl font-heading font-bold text-brand-black mb-3">
@@ -345,7 +345,7 @@ export default function EcoCleaningPage() {
                   </div>
                   {/* Connector Line (hidden on last item and mobile) */}
                   {index < process.length - 1 && (
-                    <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-gradient-to-r from-eco-green/30 to-transparent"></div>
+                    <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-linear-to-r from-eco-green/30 to-transparent"></div>
                   )}
                 </div>
               </ScrollAnimation>
@@ -355,7 +355,7 @@ export default function EcoCleaningPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-eco-green to-eco-green-hover relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-eco-green to-eco-green-hover relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -369,9 +369,9 @@ export default function EcoCleaningPage() {
                 Make the Switch to Eco-Cleaning
               </h2>
               <p className="text-lg md:text-xl text-white/95 mb-8 leading-relaxed">
-                Join hundreds of satisfied clients who've made the smart choice
-                for their health and the environment. Get a free quote for
-                chemical-free cleaning today.
+                Join hundreds of satisfied clients who&apos;ve made the smart
+                choice for their health and the environment. Get a free quote
+                for chemical-free cleaning today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
