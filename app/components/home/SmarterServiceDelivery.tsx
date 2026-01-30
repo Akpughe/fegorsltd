@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ScrollAnimation from "../ScrollAnimation";
 
 export default function SmarterServiceDelivery() {
@@ -17,9 +18,26 @@ export default function SmarterServiceDelivery() {
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
               Fegors operates through a structured digital service system that ensures consistency, accountability, and measurable quality. We combine professional service delivery with digital workflows, performance tracking, and quality monitoring to deliver reliable results for homes and businesses.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
               Unlike traditional service providers, our approach allows services to be managed, verified, and continuously improved through structured operational processes.
             </p>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 text-eco-green font-semibold hover:gap-4 transition-all duration-200 group/link">
+              Read More
+              <svg
+                className="w-5 h-5 transition-transform duration-200 group-hover/link:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
           </div>
         </ScrollAnimation>
       </div>
