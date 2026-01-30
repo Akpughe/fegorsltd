@@ -62,18 +62,9 @@ export default function SustainabilityPage() {
               <h1 className="text-2xl md:text-5xl lg:text-6xl font-heading font-black text-white mb-6 animate-fade-in-up leading-tight drop-shadow-2xl">
                 OUR COMMITMENT TO COMMUNITY & CLEANER FUTURES
               </h1>
-              <p className="text-sm md:text-xl text-white/95 leading-relaxed mb-8 animate-fade-in-up animation-delay-100 font-medium drop-shadow-md">
-                Our work is built on one simple belief: the health, dignity and
-                wellbeing of the people of Scotland and the wider UK must be
-                protected in every space we clean.
+              <p className="text-sm md:text-xl text-white/95 leading-relaxed animate-fade-in-up animation-delay-100 font-medium drop-shadow-md">
+                We protect the health and wellbeing of the people we serve through sustainable, community-first cleaning practices.
               </p>
-              <div className="text-white/90 text-xs md:text-lg animate-fade-in-up animation-delay-200 drop-shadow-md">
-                <p>
-                  Every decision we make, every service we deliver, and every
-                  innovation we adopt is guided by our responsibility to the
-                  communities we serve.
-                </p>
-              </div>
             </div>
           </div>
         </div>
