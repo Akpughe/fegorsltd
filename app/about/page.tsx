@@ -198,13 +198,20 @@ export default function AboutPage() {
                   A Smarter Way to Deliver Services
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  Fegors Ltd is not a traditional cleaning or service company. We operate through a digitally structured service operations model that brings accountability, performance tracking, and consistency into an industry that is often informal and manual.
+                  Fegors Ltd is not a traditional cleaning or service company.
+                  We operate through a digitally structured service operations
+                  model that brings accountability, performance tracking, and
+                  consistency into an industry that is often informal and
+                  manual.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  We use technology to manage service delivery the same way large organisations manage operations — through data, systems, and measurable standards.
+                  We use technology to manage service delivery the same way
+                  large organisations manage operations — through data, systems,
+                  and measurable standards.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                  This means our clients receive not only a service, but a managed, monitored, and quality-assured experience.
+                  This means our clients receive not only a service, but a
+                  managed, monitored, and quality-assured experience.
                 </p>
               </div>
             </ScrollAnimation>
@@ -222,7 +229,8 @@ export default function AboutPage() {
                         Digital Task Management
                       </h3>
                       <p className="text-gray-600">
-                        Every cleaning task is logged, scheduled, and monitored in real-time.
+                        Every cleaning task is logged, scheduled, and monitored
+                        in real-time.
                       </p>
                     </div>
                   </div>
@@ -235,7 +243,8 @@ export default function AboutPage() {
                         Performance Monitoring
                       </h3>
                       <p className="text-gray-600">
-                        Quality checks and performance metrics ensure consistent standards.
+                        Quality checks and performance metrics ensure consistent
+                        standards.
                       </p>
                     </div>
                   </div>
@@ -326,7 +335,8 @@ export default function AboutPage() {
                 Powered by Digital Operations
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Behind every service we deliver is a structured digital system that allows us to operate with transparency and control.
+                Behind every service we deliver is a structured digital system
+                that allows us to operate with transparency and control.
               </p>
             </div>
           </ScrollAnimation>
@@ -335,27 +345,32 @@ export default function AboutPage() {
             {[
               {
                 title: "Client Relationship Management",
-                description: "CRM to track service history, preferences, and communication records.",
+                description:
+                  "CRM to track service history, preferences, and communication records.",
                 icon: "👥",
               },
               {
                 title: "Digital Task Workflows",
-                description: "Structured workflows for each job location from scheduling to completion.",
+                description:
+                  "Structured workflows for each job location from scheduling to completion.",
                 icon: "✅",
               },
               {
                 title: "Performance Monitoring",
-                description: "Real-time tracking of service team performance and quality metrics.",
+                description:
+                  "Real-time tracking of service team performance and quality metrics.",
                 icon: "📊",
               },
               {
                 title: "Issue Reporting & Resolution",
-                description: "Systematic tracking and resolution of any service issues or concerns.",
+                description:
+                  "Systematic tracking and resolution of any service issues or concerns.",
                 icon: "🔧",
               },
               {
                 title: "Quality Checks & Verification",
-                description: "Service verification and quality assurance for every job completed.",
+                description:
+                  "Service verification and quality assurance for every job completed.",
                 icon: "🔍",
               },
             ].map((item, index) => (
@@ -378,7 +393,8 @@ export default function AboutPage() {
 
           <ScrollAnimation animationType="fade-up">
             <p className="text-lg text-gray-600 leading-relaxed text-center max-w-3xl mx-auto">
-              This system ensures that services are not just delivered — they are measured, improved, and optimised.
+              This system ensures that services are not just delivered — they
+              are measured, improved, and optimised.
             </p>
           </ScrollAnimation>
         </div>
@@ -418,7 +434,8 @@ export default function AboutPage() {
                   Measured, Not Guesswork
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  Many service businesses operate on trust alone. At Fegors, we combine trust with data and visibility.
+                  Many service businesses operate on trust alone. At Fegors, we
+                  combine trust with data and visibility.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-4">
                   Our approach allows:
@@ -426,23 +443,33 @@ export default function AboutPage() {
                 <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-3">
                     <span className="text-eco-green font-bold mt-1">•</span>
-                    <span className="text-lg text-gray-600">Clear service logs</span>
+                    <span className="text-lg text-gray-600">
+                      Clear service logs
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-eco-green font-bold mt-1">•</span>
-                    <span className="text-lg text-gray-600">Performance consistency</span>
+                    <span className="text-lg text-gray-600">
+                      Performance consistency
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-eco-green font-bold mt-1">•</span>
-                    <span className="text-lg text-gray-600">Traceable service history</span>
+                    <span className="text-lg text-gray-600">
+                      Traceable service history
+                    </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-eco-green font-bold mt-1">•</span>
-                    <span className="text-lg text-gray-600">Continuous improvement through feedback tracking</span>
+                    <span className="text-lg text-gray-600">
+                      Continuous improvement through feedback tracking
+                    </span>
                   </div>
                 </div>
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                  This makes us particularly suited for businesses and organisations that require reliability, standards, and reporting — not just one-off services.
+                  This makes us particularly suited for businesses and
+                  organisations that require reliability, standards, and
+                  reporting — not just one-off services.
                 </p>
               </div>
             </ScrollAnimation>
@@ -454,29 +481,45 @@ export default function AboutPage() {
                   <div className="flex items-center gap-4 pb-6 border-b border-deep-navy/10">
                     <div className="text-4xl">📋</div>
                     <div>
-                      <h3 className="font-bold text-brand-black">Service Logs</h3>
-                      <p className="text-sm text-gray-600">Timestamped documentation of all work</p>
+                      <h3 className="font-bold text-brand-black">
+                        Service Logs
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Timestamped documentation of all work
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 pb-6 border-b border-deep-navy/10">
                     <div className="text-4xl">📸</div>
                     <div>
-                      <h3 className="font-bold text-brand-black">Photo Verification</h3>
-                      <p className="text-sm text-gray-600">Before and after visual proof of quality</p>
+                      <h3 className="font-bold text-brand-black">
+                        Photo Verification
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Before and after visual proof of quality
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 pb-6 border-b border-deep-navy/10">
                     <div className="text-4xl">📊</div>
                     <div>
-                      <h3 className="font-bold text-brand-black">Performance Data</h3>
-                      <p className="text-sm text-gray-600">Metrics on quality, consistency, and reliability</p>
+                      <h3 className="font-bold text-brand-black">
+                        Performance Data
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Metrics on quality, consistency, and reliability
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="text-4xl">💬</div>
                     <div>
-                      <h3 className="font-bold text-brand-black">Feedback System</h3>
-                      <p className="text-sm text-gray-600">Your input drives continuous improvement</p>
+                      <h3 className="font-bold text-brand-black">
+                        Feedback System
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Your input drives continuous improvement
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -548,13 +591,19 @@ export default function AboutPage() {
                 Building the Future of Service Operations
               </p>
               <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
-                Fegors Ltd is developing a structured Service Operations Framework designed to help small and medium-sized service businesses operate with the discipline of large enterprises.
+                Fegors Ltd is developing a structured Service Operations
+                Framework designed to help small and medium-sized service
+                businesses operate with the discipline of large enterprises.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
-                Our long-term goal is to create a scalable operational model that improves quality, creates jobs, and brings digital transformation into sectors that have traditionally lacked structured systems.
+                Our long-term goal is to create a scalable operational model
+                that improves quality, creates jobs, and brings digital
+                transformation into sectors that have traditionally lacked
+                structured systems.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto font-semibold">
-                We believe the future of service industries lies in combining people + process + technology.
+                We believe the future of service industries lies in combining
+                people + process + technology.
               </p>
             </div>
           </ScrollAnimation>
@@ -563,17 +612,20 @@ export default function AboutPage() {
             {[
               {
                 title: "Digital-First Operations",
-                description: "Service delivery powered by integrated management systems that eliminate guesswork and ensure consistency.",
+                description:
+                  "Service delivery powered by integrated management systems that eliminate guesswork and ensure consistency.",
                 icon: "🔧",
               },
               {
                 title: "Client Partnership",
-                description: "Moving beyond vendor relationships to genuine partnerships where transparency and communication drive mutual success.",
+                description:
+                  "Moving beyond vendor relationships to genuine partnerships where transparency and communication drive mutual success.",
                 icon: "🤝",
               },
               {
                 title: "Continuous Excellence",
-                description: "Systems designed to improve over time — learning from data, client feedback, and best practices to deliver better results.",
+                description:
+                  "Systems designed to improve over time — learning from data, client feedback, and best practices to deliver better results.",
                 icon: "📈",
               },
             ].map((pillar, index) => (
