@@ -182,8 +182,85 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Experience */}
+      {/* How We're Different */}
       <section className="py-16 md:py-24 bg-white">
+        <div className="container-custom mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <ScrollAnimation animationType="slide-left">
+              <div>
+                <div className="inline-block px-4 py-2 bg-eco-green/10 rounded-full mb-6">
+                  <span className="text-eco-green font-bold text-sm uppercase tracking-wider">
+                    How We're Different
+                  </span>
+                </div>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-6">
+                  A Smarter Way to Deliver Services
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  Fegors Ltd is not a traditional cleaning or service company. We operate through a digitally structured service operations model that brings accountability, performance tracking, and consistency into an industry that is often informal and manual.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  We use technology to manage service delivery the same way large organisations manage operations — through data, systems, and measurable standards.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                  This means our clients receive not only a service, but a managed, monitored, and quality-assured experience.
+                </p>
+              </div>
+            </ScrollAnimation>
+
+            {/* Visual/Features */}
+            <ScrollAnimation animationType="slide-right">
+              <div className="bg-gradient-to-br from-eco-green/5 to-eco-green/10 rounded-3xl p-8 md:p-12 border-2 border-eco-green/20">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-eco-green flex items-center justify-center shrink-0 mt-1">
+                      <span className="text-white font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-brand-black mb-2">
+                        Digital Task Management
+                      </h3>
+                      <p className="text-gray-600">
+                        Every cleaning task is logged, scheduled, and monitored in real-time.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-eco-green flex items-center justify-center shrink-0 mt-1">
+                      <span className="text-white font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-brand-black mb-2">
+                        Performance Monitoring
+                      </h3>
+                      <p className="text-gray-600">
+                        Quality checks and performance metrics ensure consistent standards.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-eco-green flex items-center justify-center shrink-0 mt-1">
+                      <span className="text-white font-bold">✓</span>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-brand-black mb-2">
+                        Client Transparency
+                      </h3>
+                      <p className="text-gray-600">
+                        You always know what was done, when, and by whom.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Experience */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-grey/40 to-white">
         <div className="container-custom mx-auto px-6">
           <ScrollAnimation animationType="fade-up">
             <div className="text-center max-w-3xl mx-auto mb-16">
@@ -235,6 +312,78 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Our Digital Service Model */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container-custom mx-auto px-6">
+          <ScrollAnimation animationType="fade-up">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <div className="inline-block px-4 py-2 bg-eco-green/10 rounded-full mb-6">
+                <span className="text-eco-green font-bold text-sm uppercase tracking-wider">
+                  Digital Operations
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-6">
+                Powered by Digital Operations
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Behind every service we deliver is a structured digital system that allows us to operate with transparency and control.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                title: "Client Relationship Management",
+                description: "CRM to track service history, preferences, and communication records.",
+                icon: "👥",
+              },
+              {
+                title: "Digital Task Workflows",
+                description: "Structured workflows for each job location from scheduling to completion.",
+                icon: "✅",
+              },
+              {
+                title: "Performance Monitoring",
+                description: "Real-time tracking of service team performance and quality metrics.",
+                icon: "📊",
+              },
+              {
+                title: "Issue Reporting & Resolution",
+                description: "Systematic tracking and resolution of any service issues or concerns.",
+                icon: "🔧",
+              },
+              {
+                title: "Quality Checks & Verification",
+                description: "Service verification and quality assurance for every job completed.",
+                icon: "🔍",
+              },
+            ].map((item, index) => (
+              <ScrollAnimation
+                key={item.title}
+                animationType="fade-up"
+                delay={index * 100}>
+                <div className="bg-white rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-eco-green/20">
+                  <div className="text-5xl mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-heading font-bold text-brand-black mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </ScrollAnimation>
+            ))}
+          </div>
+
+          <ScrollAnimation animationType="fade-up">
+            <p className="text-lg text-gray-600 leading-relaxed text-center max-w-3xl mx-auto">
+              This system ensures that services are not just delivered — they are measured, improved, and optimised.
+            </p>
+          </ScrollAnimation>
+        </div>
+      </section>
+
       {/* Our Mission */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-eco-green/10 to-white">
         <div className="container-custom mx-auto px-6">
@@ -253,8 +402,92 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Team */}
+      {/* Accountability & Reporting */}
       <section className="py-16 md:py-24 bg-white">
+        <div className="container-custom mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <ScrollAnimation animationType="slide-left">
+              <div>
+                <div className="inline-block px-4 py-2 bg-eco-green/10 rounded-full mb-6">
+                  <span className="text-eco-green font-bold text-sm uppercase tracking-wider">
+                    Transparency & Trust
+                  </span>
+                </div>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-6">
+                  Measured, Not Guesswork
+                </h2>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  Many service businesses operate on trust alone. At Fegors, we combine trust with data and visibility.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">
+                  Our approach allows:
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start gap-3">
+                    <span className="text-eco-green font-bold mt-1">•</span>
+                    <span className="text-lg text-gray-600">Clear service logs</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-eco-green font-bold mt-1">•</span>
+                    <span className="text-lg text-gray-600">Performance consistency</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-eco-green font-bold mt-1">•</span>
+                    <span className="text-lg text-gray-600">Traceable service history</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-eco-green font-bold mt-1">•</span>
+                    <span className="text-lg text-gray-600">Continuous improvement through feedback tracking</span>
+                  </div>
+                </div>
+                <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                  This makes us particularly suited for businesses and organisations that require reliability, standards, and reporting — not just one-off services.
+                </p>
+              </div>
+            </ScrollAnimation>
+
+            {/* Visual */}
+            <ScrollAnimation animationType="slide-right">
+              <div className="bg-gradient-to-br from-deep-navy/5 to-deep-navy/10 rounded-3xl p-8 md:p-12 border-2 border-deep-navy/10">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4 pb-6 border-b border-deep-navy/10">
+                    <div className="text-4xl">📋</div>
+                    <div>
+                      <h3 className="font-bold text-brand-black">Service Logs</h3>
+                      <p className="text-sm text-gray-600">Timestamped documentation of all work</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 pb-6 border-b border-deep-navy/10">
+                    <div className="text-4xl">📸</div>
+                    <div>
+                      <h3 className="font-bold text-brand-black">Photo Verification</h3>
+                      <p className="text-sm text-gray-600">Before and after visual proof of quality</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4 pb-6 border-b border-deep-navy/10">
+                    <div className="text-4xl">📊</div>
+                    <div>
+                      <h3 className="font-bold text-brand-black">Performance Data</h3>
+                      <p className="text-sm text-gray-600">Metrics on quality, consistency, and reliability</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="text-4xl">💬</div>
+                    <div>
+                      <h3 className="font-bold text-brand-black">Feedback System</h3>
+                      <p className="text-sm text-gray-600">Your input drives continuous improvement</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-soft-grey/40 to-white">
         <div className="container-custom mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
@@ -294,6 +527,71 @@ export default function AboutPage() {
                 </div>
               </div>
             </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Vision */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container-custom mx-auto px-6">
+          <ScrollAnimation animationType="fade-up">
+            <div className="text-center max-w-4xl mx-auto mb-16">
+              <div className="inline-block px-4 py-2 bg-eco-green/10 rounded-full mb-6">
+                <span className="text-eco-green font-bold text-sm uppercase tracking-wider">
+                  Looking Ahead
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-brand-black mb-8">
+                Our Vision
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium mb-8">
+                Building the Future of Service Operations
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
+                Fegors Ltd is developing a structured Service Operations Framework designed to help small and medium-sized service businesses operate with the discipline of large enterprises.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-6">
+                Our long-term goal is to create a scalable operational model that improves quality, creates jobs, and brings digital transformation into sectors that have traditionally lacked structured systems.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto font-semibold">
+                We believe the future of service industries lies in combining people + process + technology.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              {
+                title: "Digital-First Operations",
+                description: "Service delivery powered by integrated management systems that eliminate guesswork and ensure consistency.",
+                icon: "🔧",
+              },
+              {
+                title: "Client Partnership",
+                description: "Moving beyond vendor relationships to genuine partnerships where transparency and communication drive mutual success.",
+                icon: "🤝",
+              },
+              {
+                title: "Continuous Excellence",
+                description: "Systems designed to improve over time — learning from data, client feedback, and best practices to deliver better results.",
+                icon: "📈",
+              },
+            ].map((pillar, index) => (
+              <ScrollAnimation
+                key={pillar.title}
+                animationType="fade-up"
+                delay={index * 100}>
+                <div className="bg-gradient-to-br from-eco-green/5 to-eco-green/10 rounded-2xl p-8 border-2 border-eco-green/20 hover:shadow-lg transition-all duration-300">
+                  <div className="text-4xl mb-4">{pillar.icon}</div>
+                  <h3 className="text-xl font-heading font-bold text-brand-black mb-3">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {pillar.description}
+                  </p>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
